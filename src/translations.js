@@ -95,7 +95,7 @@ export const translations = {
 
         // Footer
         "footer-title": "Ready to scale your enterprise across borders?",
-        "footer-btn": "Schedule a Consultation",
+        "footer-btn": "Book Now",
         "footer-copy": "© 2026 Ahmad Hassan Adv. Corporate Legal Architect."
     },
     zh: {

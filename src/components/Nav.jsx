@@ -28,8 +28,9 @@ export default function Nav() {
                     <a href="#about">{t('nav-about')}</a>
                     <a href="#services">{t('nav-services')}</a>
                     <a href="#portfolio">{t('nav-portfolio')}</a>
-                    <button className="lang-toggle-btn" onClick={toggleLang}>
-                        {lang === 'en' ? '中文' : 'ENG'}
+                    <button className="lang-switch" onClick={toggleLang} aria-label="Toggle language">
+                        <span className={lang === 'en' ? 'active' : ''}>ENG</span>
+                        <span className={lang === 'zh' ? 'active' : ''}>中文</span>
                     </button>
                     <a href="#contact" className="btn btn-primary">{t('nav-contact')}</a>
                 </div>
@@ -46,8 +47,9 @@ export default function Nav() {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                         >
-                            <button className="lang-toggle-btn-mobile" onClick={toggleLang}>
-                                {lang === 'en' ? '切换成中文' : 'Switch to English'}
+                            <button className="lang-switch" style={{ marginBottom: '2rem', transform: 'scale(1.2)' }} onClick={toggleLang}>
+                                <span className={lang === 'en' ? 'active' : ''}>ENG</span>
+                                <span className={lang === 'zh' ? 'active' : ''}>中文</span>
                             </button>
                             <a href="#about" className="mobile-link" onClick={() => setMenuOpen(false)}>{t('nav-about')}</a>
                             <a href="#services" className="mobile-link" onClick={() => setMenuOpen(false)}>{t('nav-services')}</a>
