@@ -630,7 +630,7 @@ img {
 }
 
 .portfolio-card {
-    flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(42% - 1rem);
     scroll-snap-align: center;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
