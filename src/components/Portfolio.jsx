@@ -10,19 +10,19 @@ export default function Portfolio() {
     const items = [
         {
             key: '1',
-            img: "https://images.unsplash.com/photo-1503376760367-11ea8eb22247?q=80&w=800&auto=format&fit=crop"
+            img: "/portfolio-ipo.png"
         },
         {
             key: '2',
-            img: "https://images.unsplash.com/photo-1621217319985-2c8c4a00bcbb?q=80&w=800&auto=format&fit=crop"
+            img: "/portfolio-capital-markets.png"
         },
         {
             key: '3',
-            img: "https://images.unsplash.com/photo-1593941707882-a5bba14938cb?q=80&w=800&auto=format&fit=crop"
+            img: "/portfolio-mining.png"
         },
         {
             key: '4',
-            img: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=800&auto=format&fit=crop"
+            img: "/portfolio-ev-plant.png"
         }
     ];
 
