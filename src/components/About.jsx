@@ -19,7 +19,7 @@ export default function About() {
                         transition={{ duration: 0.8 }}
                     >
                         <div className="image-border-glow"></div>
-                        <img src="/profile.png" alt="Ahmad Hassan Adv" className="about-image" />
+                        <img src="/ahmad-hassan-about.jpg" alt="Ahmad Hassan Adv" className="about-image" />
                         
                         <div className="experience-badge">
                             <div className="badge-content">
