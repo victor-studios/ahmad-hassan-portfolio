@@ -10,19 +10,23 @@ export default function Portfolio() {
     const items = [
         {
             key: '1',
-            img: "/portfolio-ipo.png"
+            img: "/portfolio-changan.png"
         },
         {
             key: '2',
-            img: "/portfolio-capital-markets.png"
+            img: "/portfolio-dayi.png"
         },
         {
             key: '3',
-            img: "/portfolio-mining.png"
+            img: "/portfolio-nalibat.png"
         },
         {
             key: '4',
-            img: "/portfolio-ev-plant.png"
+            img: "/portfolio-china-booster.png"
+        },
+        {
+            key: '5',
+            img: "/portfolio-petrolor.png"
         }
     ];
 

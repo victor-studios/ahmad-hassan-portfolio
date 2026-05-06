@@ -18,16 +18,16 @@ export default function Services() {
     }, [selectedService]);
 
     const services = [
-        { icon: Pickaxe, key: 'mining', number: '01' },
-        { icon: Leaf, key: 'fertilizer', number: '02' },
+        { icon: Building2, key: 'incorp', number: '01' },
+        { icon: Calculator, key: 'tax', number: '02' },
         { icon: CarFront, key: 'ev', number: '03' },
-        { icon: Zap, key: 'energy', number: '04' },
+        { icon: Leaf, key: 'fertilizer', number: '04' },
         { icon: Ship, key: 'customs', number: '05' },
-        { icon: Calculator, key: 'tax', number: '06' },
-        { icon: Lightbulb, key: 'ip', number: '07' },
-        { icon: LineChart, key: 'psx', number: '08' },
-        { icon: Gavel, key: 'litigation', number: '09' },
-        { icon: Building2, key: 'incorp', number: '10' }
+        { icon: Pickaxe, key: 'mining', number: '06' },
+        { icon: Zap, key: 'energy', number: '07' },
+        { icon: Lightbulb, key: 'ip', number: '08' },
+        { icon: LineChart, key: 'psx', number: '09' },
+        { icon: Gavel, key: 'litigation', number: '10' }
     ];
 
     const containerVariants = {
