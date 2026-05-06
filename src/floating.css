@@ -1,28 +1,97 @@
-/* WhatsApp Floating Icon */
-.whatsapp-float {
+/* Contact Floating Icon */
+.contact-floating-container {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-float-btn {
     width: 60px;
     height: 60px;
-    background-color: transparent;
+    background: linear-gradient(135deg, var(--accent-gold) 0%, #b08d42 100%);
+    color: #050608;
+    border: none;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(197, 160, 89, 0.4);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    filter: drop-shadow(0px 8px 15px rgba(37, 211, 102, 0.5));
+    outline: none;
 }
 
-.whatsapp-float:hover {
-    transform: translateY(-8px) scale(1.1);
-    filter: drop-shadow(0px 12px 25px rgba(37, 211, 102, 0.7));
+.contact-float-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(197, 160, 89, 0.6);
 }
 
-.whatsapp-float img {
-    width: 100%;
-    height: 100%;
+.contact-float-btn.active {
+    background: var(--bg-darker);
+    color: var(--accent-gold);
+    border: 1px solid var(--accent-gold);
+    transform: rotate(90deg);
+}
+
+.contact-menu {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    animation: slideUpFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.contact-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    white-space: nowrap;
+}
+
+.contact-menu-item:hover {
+    transform: translateX(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-icon-small {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.qr-modal-content {
+    max-width: 450px;
+    padding: 30px;
+}
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 /* Modal CSS */

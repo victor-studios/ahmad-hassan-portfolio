@@ -5,23 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
-
-function WhatsAppButton() {
-    return (
-        <a 
-            href="https://wa.me/923134382949" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="whatsapp-float"
-            aria-label="Contact us on WhatsApp"
-        >
-            <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                alt="WhatsApp" 
-            />
-        </a>
-    );
-}
+import ContactFloating from './components/ContactFloating';
 
 function App() {
   return (
@@ -32,7 +16,7 @@ function App() {
       <Services />
       <Portfolio />
       <Footer />
-      <WhatsAppButton />
+      <ContactFloating />
     </>
   );
 }
